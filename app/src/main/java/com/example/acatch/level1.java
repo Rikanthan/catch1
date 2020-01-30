@@ -35,19 +35,7 @@ public class level1 extends AppCompatActivity {
 
 
                    ImgButton.setImageResource(R.drawable.cat);
-                   AlertDialog.Builder builder = new AlertDialog.Builder(level1.this);
-
-                   builder.setCancelable(true);
-                   builder.setTitle("police catch thief");
-                   builder.setMessage("Level 1 completed");
-                   builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                       @Override
-                       public void onClick(DialogInterface dialogInterface, int i) {
-                           openActivity();
-                       }
-                   });
-                   builder.show();
-                    x++;
+                  dialog();
 
                }
                else
@@ -85,18 +73,7 @@ public class level1 extends AppCompatActivity {
                 {
 
                     ImgButton1.setImageResource(R.drawable.cat);
-                    AlertDialog.Builder builder = new AlertDialog.Builder(level1.this);
-
-                    builder.setCancelable(true);
-                    builder.setTitle("Police catch thief");
-                    builder.setMessage("Level 1 completed");
-                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            openActivity();
-                        }
-                    });
-                    builder.show();
+                    dialog();
 
 
 
@@ -139,18 +116,7 @@ public class level1 extends AppCompatActivity {
                 {
 
                     ImgButton2.setImageResource(R.drawable.cat);
-                    AlertDialog.Builder builder = new AlertDialog.Builder(level1.this);
-
-                    builder.setCancelable(true);
-                    builder.setTitle("Police catch thief");
-                    builder.setMessage("Level 1 completed");
-                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            openActivity();
-                        }
-                    });
-                    builder.show();
+                    dialog();
 
                 }
                 else
@@ -188,18 +154,7 @@ public class level1 extends AppCompatActivity {
 
                     ImgButton3.setImageResource(R.drawable.cat);
 
-                    AlertDialog.Builder builder = new AlertDialog.Builder(level1.this);
-
-                    builder.setCancelable(true);
-                    builder.setTitle("Police catch thief");
-                    builder.setMessage("Level 1 completed");
-                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            openActivity();
-                        }
-                    });
-                    builder.show();
+                    dialog();
 
                 }
                 else
@@ -233,6 +188,21 @@ public class level1 extends AppCompatActivity {
 
 
 
+    }
+    public void dialog()
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(level1.this);
+
+        builder.setCancelable(true);
+        builder.setTitle("Police catch thief");
+        builder.setMessage("Level 1 completed");
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                openActivity();
+            }
+        });
+        builder.show();
     }
     public void openActivity()
     {
