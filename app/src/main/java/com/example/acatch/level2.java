@@ -14,13 +14,14 @@ public class level2 extends AppCompatActivity {
     ImageButton ImgButton;
     ImageButton ImgButton2;
     ImageButton ImgButton3;
-    ImageButton ImgButton1;
+    ImageButton ImgButton4;
     ImageButton ImgButton5;
     ImageButton ImgButton6;
 
     int x=0;
     int t1=(int)(Math.random()*100);
     int t2=t1%6;
+    int bo=((int)(Math.random()*100))%6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +42,14 @@ public class level2 extends AppCompatActivity {
                     dialog();
 
                 }
+                else if(bo==t2)
+                {
+
+
+                    ImgButton.setImageResource(R.drawable.bomp);
+                    bomb();
+
+                }
                 else
                 {
                     count();
@@ -48,15 +57,15 @@ public class level2 extends AppCompatActivity {
                     ImgButton.setImageResource(R.drawable.polic);
                     if(t2==2)
                     {
-                        ImgButton2.setImageResource(R.drawable.thi);
+                        ImgButton3.setImageResource(R.drawable.thi);
                     }
                     else if(t2==3)
                     {
-                        ImgButton3.setImageResource(R.drawable.thi);
+                        ImgButton4.setImageResource(R.drawable.thi);
                     }
                     else if(t2==1)
                     {
-                        ImgButton1.setImageResource(R.drawable.thi);
+                        ImgButton2.setImageResource(R.drawable.thi);
                     }
                     else if(t2==4)
                     {
@@ -74,9 +83,9 @@ public class level2 extends AppCompatActivity {
         });
 
         t2=(int)(Math.random()*100)%6;
-        ImgButton1 = (ImageButton)findViewById(R.id.imageButton2);
+        ImgButton2 = (ImageButton)findViewById(R.id.imageButton2);
 
-        ImgButton1.setOnClickListener(new View.OnClickListener() {
+        ImgButton2.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -84,25 +93,34 @@ public class level2 extends AppCompatActivity {
                 if(t==t2)
                 {
 
-                    ImgButton1.setImageResource(R.drawable.cat);
+                    ImgButton2.setImageResource(R.drawable.cat);
                     dialog();
 
 
 
 
                 }
+
+                else if(bo==t2)
+                {
+
+
+                    ImgButton2.setImageResource(R.drawable.bomp);
+                    bomb();
+
+                }
                 else
                 {
 
                     count();
-                    ImgButton1.setImageResource(R.drawable.polic);
+                    ImgButton2.setImageResource(R.drawable.polic);
                     if(t2==2)
                     {
-                        ImgButton2.setImageResource(R.drawable.thi);
+                        ImgButton3.setImageResource(R.drawable.thi);
                     }
                     else if(t2==3)
                     {
-                        ImgButton3.setImageResource(R.drawable.thi);
+                        ImgButton4.setImageResource(R.drawable.thi);
                     }
                     else if(t2==0)
                     {
@@ -126,9 +144,9 @@ public class level2 extends AppCompatActivity {
         });
 
         t2=(int)(Math.random()*100)%6;
-        ImgButton2 = (ImageButton)findViewById(R.id.imageButton3);
+        ImgButton3 = (ImageButton)findViewById(R.id.imageButton3);
 
-        ImgButton2.setOnClickListener(new View.OnClickListener() {
+        ImgButton3.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -136,22 +154,30 @@ public class level2 extends AppCompatActivity {
                 if(t==t2)
                 {
 
-                    ImgButton2.setImageResource(R.drawable.cat);
+                    ImgButton3.setImageResource(R.drawable.cat);
                     dialog();
+
+                }
+                else if(bo==t2)
+                {
+
+
+                    ImgButton3.setImageResource(R.drawable.bomp);
+                    bomb();
 
                 }
                 else
                 {
                     count();
 
-                    ImgButton2.setImageResource(R.drawable.polic);
+                    ImgButton3.setImageResource(R.drawable.polic);
                     if(t2==1)
                     {
-                        ImgButton1.setImageResource(R.drawable.thi);
+                        ImgButton2.setImageResource(R.drawable.thi);
                     }
                     else if(t2==3)
                     {
-                        ImgButton3.setImageResource(R.drawable.thi);
+                        ImgButton4.setImageResource(R.drawable.thi);
                     }
                     else if(t2==0)
                     {
@@ -172,9 +198,9 @@ public class level2 extends AppCompatActivity {
             }
         });
         t2=(int)(Math.random()*100)%6;
-        ImgButton3 = (ImageButton)findViewById(R.id.imageButton4);
+        ImgButton4 = (ImageButton)findViewById(R.id.imageButton4);
 
-        ImgButton3.setOnClickListener(new View.OnClickListener() {
+        ImgButton4.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -182,24 +208,32 @@ public class level2 extends AppCompatActivity {
                 if(t==t2)
                 {
 
-                    ImgButton3.setImageResource(R.drawable.cat);
+                    ImgButton4.setImageResource(R.drawable.cat);
 
                     dialog();
+
+                }
+                else if(bo==t2)
+                {
+
+
+                    ImgButton4.setImageResource(R.drawable.bomp);
+                    bomb();
 
                 }
                 else
                 {
                     count();
 
-                    ImgButton3.setImageResource(R.drawable.polic);
+                    ImgButton4.setImageResource(R.drawable.polic);
                     t2=(int)(Math.random()*100)%6;
                     if(t2==2)
                     {
-                        ImgButton2.setImageResource(R.drawable.thi);
+                        ImgButton3.setImageResource(R.drawable.thi);
                     }
                     else if(t2==1)
                     {
-                        ImgButton1.setImageResource(R.drawable.thi);
+                        ImgButton2.setImageResource(R.drawable.thi);
                     }
                     else if(t2==0)
                     {
@@ -238,19 +272,27 @@ public class level2 extends AppCompatActivity {
                     dialog();
 
                 }
+                else if(bo==t2)
+                {
+
+
+                    ImgButton5.setImageResource(R.drawable.bomp);
+                    bomb();
+
+                }
                 else
                 {
                     count();
 
-                    ImgButton3.setImageResource(R.drawable.polic);
+                    ImgButton5.setImageResource(R.drawable.polic);
                     t2=(int)(Math.random()*100)%6;
                     if(t2==2)
                     {
-                        ImgButton2.setImageResource(R.drawable.thi);
+                        ImgButton3.setImageResource(R.drawable.thi);
                     }
                     else if(t2==1)
                     {
-                        ImgButton1.setImageResource(R.drawable.thi);
+                        ImgButton2.setImageResource(R.drawable.thi);
                     }
                     else if(t2==0)
                     {
@@ -258,7 +300,7 @@ public class level2 extends AppCompatActivity {
                     }
                     else if(t2==3)
                     {
-                        ImgButton3.setImageResource(R.drawable.thi);
+                        ImgButton4.setImageResource(R.drawable.thi);
                     }
                     else if(t2==5)
                     {
@@ -290,19 +332,27 @@ public class level2 extends AppCompatActivity {
                     dialog();
 
                 }
+                else if(bo==t2)
+                {
+
+
+                    ImgButton6.setImageResource(R.drawable.bomp);
+                    bomb();
+
+                }
                 else
                 {
                     count();
 
-                    ImgButton3.setImageResource(R.drawable.polic);
+                    ImgButton6.setImageResource(R.drawable.polic);
                     t2=(int)(Math.random()*100)%6;
                     if(t2==2)
                     {
-                        ImgButton2.setImageResource(R.drawable.thi);
+                        ImgButton3.setImageResource(R.drawable.thi);
                     }
                     else if(t2==1)
                     {
-                        ImgButton1.setImageResource(R.drawable.thi);
+                        ImgButton2.setImageResource(R.drawable.thi);
                     }
                     else if(t2==0)
                     {
@@ -314,7 +364,7 @@ public class level2 extends AppCompatActivity {
                     }
                     else if(t2==3)
                     {
-                        ImgButton3.setImageResource(R.drawable.thi);
+                        ImgButton4.setImageResource(R.drawable.thi);
                     }
 
                 }
@@ -329,6 +379,21 @@ public class level2 extends AppCompatActivity {
 
 
 
+    }
+    public void bomb()
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(level2.this);
+
+        builder.setCancelable(true);
+        builder.setTitle("You picked bomb");
+        builder.setMessage("Level failed");
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                openActivity3();
+            }
+        });
+        builder.show();
     }
     public void dialog()
     {
@@ -348,7 +413,7 @@ public class level2 extends AppCompatActivity {
     public void openActivity()
     {
 
-        Intent intent = new Intent(this, level3.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
 
     }
@@ -375,7 +440,7 @@ public class level2 extends AppCompatActivity {
     }
     public void openActivity3()
     {
-        Intent intent = new Intent(this, level2.class);
+        Intent intent = new Intent(this, level3.class);
         startActivity(intent);
     }
 
