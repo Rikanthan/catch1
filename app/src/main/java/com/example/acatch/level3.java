@@ -30,7 +30,7 @@ public class level3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level3);
         t2=(int)(Math.random()*100)%9;
-        ImgButton = (ImageButton)findViewById(R.id.imageButton);
+        bo=((int)(Math.random()*100))%9;ImgButton = (ImageButton)findViewById(R.id.imageButton);
 
         ImgButton.setOnClickListener(new View.OnClickListener() {
 
@@ -91,12 +91,11 @@ public class level3 extends AppCompatActivity {
 
                 }
                 t2=(int)(Math.random()*100)%9;
-
-            }
+        bo=((int)(Math.random()*100))%9;}
         });
 
         t2=(int)(Math.random()*100)%9;
-        ImgButton1 = (ImageButton)findViewById(R.id.imageButton1);
+        bo=((int)(Math.random()*100))%9;ImgButton1 = (ImageButton)findViewById(R.id.imageButton1);
 
         ImgButton1.setOnClickListener(new View.OnClickListener() {
 
@@ -160,12 +159,11 @@ public class level3 extends AppCompatActivity {
 
                 }
                 t2=(int)(Math.random()*100)%9;
-
-            }
+        bo=((int)(Math.random()*100))%9;}
         });
 
         t2=(int)(Math.random()*100)%9;
-        ImgButton2 = (ImageButton)findViewById(R.id.imageButton2);
+        bo=((int)(Math.random()*100))%9;ImgButton2 = (ImageButton)findViewById(R.id.imageButton2);
 
         ImgButton2.setOnClickListener(new View.OnClickListener() {
 
@@ -224,11 +222,10 @@ public class level3 extends AppCompatActivity {
 
                 }
                 t2=(int)(Math.random()*100)%9;
-
-            }
+        bo=((int)(Math.random()*100))%9;}
         });
         t2=(int)(Math.random()*100)%9;
-        ImgButton3 = (ImageButton)findViewById(R.id.imageButton3);
+        bo=((int)(Math.random()*100))%9;ImgButton3 = (ImageButton)findViewById(R.id.imageButton3);
 
         ImgButton3.setOnClickListener(new View.OnClickListener() {
 
@@ -254,7 +251,7 @@ public class level3 extends AppCompatActivity {
 
                     ImgButton3.setImageResource(R.drawable.polic);
                     t2=(int)(Math.random()*100)%9;
-                    if(t2==2)
+        bo=((int)(Math.random()*100))%9;if(t2==2)
                     {
                         ImgButton2.setImageResource(R.drawable.thi);
                     }
@@ -289,14 +286,13 @@ public class level3 extends AppCompatActivity {
 
                 }
                 t2=(int)(Math.random()*100)%9;
-
-            }
+        bo=((int)(Math.random()*100))%9;}
         });
 
 
 
         t2=(int)(Math.random()*100)%9;
-        ImgButton4 = (ImageButton)findViewById(R.id.imageButton4);
+        bo=((int)(Math.random()*100))%9;ImgButton4 = (ImageButton)findViewById(R.id.imageButton4);
 
         ImgButton4.setOnClickListener(new View.OnClickListener() {
 
@@ -322,7 +318,7 @@ public class level3 extends AppCompatActivity {
 
                     ImgButton4.setImageResource(R.drawable.polic);
                     t2=(int)(Math.random()*100)%9;
-                    if(t2==2)
+        bo=((int)(Math.random()*100))%9;if(t2==2)
                     {
                         ImgButton2.setImageResource(R.drawable.thi);
                     }
@@ -357,15 +353,14 @@ public class level3 extends AppCompatActivity {
 
                 }
                 t2=(int)(Math.random()*100)%9;
-
-            }
+        bo=((int)(Math.random()*100))%9;}
         });
 
 
 
 
         t2=(int)(Math.random()*100)%9;
-        ImgButton5 = (ImageButton)findViewById(R.id.imageButton5);
+        bo=((int)(Math.random()*100))%9;ImgButton5 = (ImageButton)findViewById(R.id.imageButton5);
 
         ImgButton5.setOnClickListener(new View.OnClickListener() {
 
@@ -391,7 +386,7 @@ public class level3 extends AppCompatActivity {
 
                     ImgButton5.setImageResource(R.drawable.polic);
                     t2=(int)(Math.random()*100)%9;
-                    if(t2==2)
+        bo=((int)(Math.random()*100))%9;if(t2==2)
                     {
                         ImgButton2.setImageResource(R.drawable.thi);
                     }
@@ -427,13 +422,12 @@ public class level3 extends AppCompatActivity {
 
                 }
                 t2=(int)(Math.random()*100)%9;
-
-            }
+        bo=((int)(Math.random()*100))%9;}
         });
 
 
         t2=(int)(Math.random()*100)%9;
-        ImgButton6 = (ImageButton)findViewById(R.id.imageButton6);
+        bo=((int)(Math.random()*100))%9;ImgButton6 = (ImageButton)findViewById(R.id.imageButton6);
 
         ImgButton6.setOnClickListener(new View.OnClickListener() {
 
@@ -459,7 +453,7 @@ public class level3 extends AppCompatActivity {
 
                     ImgButton6.setImageResource(R.drawable.polic);
                     t2=(int)(Math.random()*100)%9;
-                    if(t2==2)
+        bo=((int)(Math.random()*100))%9;if(t2==2)
                     {
                         ImgButton2.setImageResource(R.drawable.thi);
                     }
@@ -495,14 +489,13 @@ public class level3 extends AppCompatActivity {
 
                 }
                 t2=(int)(Math.random()*100)%9;
-
-            }
+        bo=((int)(Math.random()*100))%9;}
         });
 
 
 
         t2=(int)(Math.random()*100)%9;
-        ImgButton7= (ImageButton)findViewById(R.id.imageButton7);
+        bo=((int)(Math.random()*100))%9;ImgButton7= (ImageButton)findViewById(R.id.imageButton7);
 
         ImgButton7.setOnClickListener(new View.OnClickListener() {
 
@@ -528,7 +521,7 @@ public class level3 extends AppCompatActivity {
 
                     ImgButton7.setImageResource(R.drawable.polic);
                     t2=(int)(Math.random()*100)%9;
-                    if(t2==2)
+        bo=((int)(Math.random()*100))%9;if(t2==2)
                     {
                         ImgButton2.setImageResource(R.drawable.thi);
                     }
@@ -564,11 +557,11 @@ public class level3 extends AppCompatActivity {
 
                 }
                 t2=(int)(Math.random()*100)%9;
-
-            }
+        bo=((int)(Math.random()*100))%9;}
         });
 
         t2=(int)(Math.random()*100)%9;
+        bo=((int)(Math.random()*100))%9;
         ImgButton8 = (ImageButton)findViewById(R.id.imageButton8);
 
         ImgButton8.setOnClickListener(new View.OnClickListener() {
@@ -595,7 +588,7 @@ public class level3 extends AppCompatActivity {
 
                     ImgButton8.setImageResource(R.drawable.polic);
                     t2=(int)(Math.random()*100)%9;
-                    if(t2==2)
+        bo=((int)(Math.random()*100))%9;if(t2==2)
                     {
                         ImgButton2.setImageResource(R.drawable.thi);
                     }
@@ -631,8 +624,7 @@ public class level3 extends AppCompatActivity {
 
                 }
                 t2=(int)(Math.random()*100)%9;
-
-            }
+        bo=((int)(Math.random()*100))%9;}
         });
 
 
