@@ -19,7 +19,7 @@ public class level3 extends AppCompatActivity {
     ImageButton ImgButton6;
     ImageButton ImgButton7;
     ImageButton ImgButton8;
-    ImageButton ImgButton9;
+    ImageButton ImgButton4;
 
     int x=0;
     int t1=(int)(Math.random()*100);
@@ -69,23 +69,23 @@ public class level3 extends AppCompatActivity {
                     }
                     else if(t2==4)
                     {
-                        ImgButton5.setImageResource(R.drawable.thi);
+                        ImgButton4.setImageResource(R.drawable.thi);
                     }
                     else if(t2==5)
                     {
-                        ImgButton6.setImageResource(R.drawable.thi);
+                        ImgButton5.setImageResource(R.drawable.thi);
                     }
                     else if(t2==6)
                     {
-                        ImgButton7.setImageResource(R.drawable.thi);
+                        ImgButton6.setImageResource(R.drawable.thi);
                     }
                     else if(t2==7)
                     {
-                        ImgButton8.setImageResource(R.drawable.thi);
+                        ImgButton7.setImageResource(R.drawable.thi);
                     }
                     else if(t2==8)
                     {
-                        ImgButton9.setImageResource(R.drawable.thi);
+                        ImgButton8.setImageResource(R.drawable.thi);
                     }
                     
 
@@ -137,23 +137,23 @@ public class level3 extends AppCompatActivity {
                     }
                     else if(t2==4)
                     {
-                        ImgButton5.setImageResource(R.drawable.thi);
+                        ImgButton4.setImageResource(R.drawable.thi);
                     }
                     else if(t2==5)
                     {
-                        ImgButton6.setImageResource(R.drawable.thi);
+                        ImgButton5.setImageResource(R.drawable.thi);
                     }
                     else if(t2==6)
                     {
-                        ImgButton7.setImageResource(R.drawable.thi);
+                        ImgButton6.setImageResource(R.drawable.thi);
                     }
                     else if(t2==7)
                     {
-                        ImgButton8.setImageResource(R.drawable.thi);
+                        ImgButton7.setImageResource(R.drawable.thi);
                     }
                     else if(t2==8)
                     {
-                        ImgButton9.setImageResource(R.drawable.thi);
+                        ImgButton8.setImageResource(R.drawable.thi);
                     }
 
 
@@ -203,23 +203,23 @@ public class level3 extends AppCompatActivity {
                     }
                     else if(t2==4)
                     {
-                        ImgButton5.setImageResource(R.drawable.thi);
+                        ImgButton4.setImageResource(R.drawable.thi);
                     }
                     else if(t2==5)
                     {
-                        ImgButton6.setImageResource(R.drawable.thi);
+                        ImgButton5.setImageResource(R.drawable.thi);
                     }
                     else if(t2==6)
                     {
-                        ImgButton7.setImageResource(R.drawable.thi);
+                        ImgButton6.setImageResource(R.drawable.thi);
                     }
                     else if(t2==7)
                     {
-                        ImgButton8.setImageResource(R.drawable.thi);
+                        ImgButton7.setImageResource(R.drawable.thi);
                     }
                     else if(t2==8)
                     {
-                        ImgButton9.setImageResource(R.drawable.thi);
+                        ImgButton8.setImageResource(R.drawable.thi);
                     }
 
                 }
@@ -268,23 +268,23 @@ public class level3 extends AppCompatActivity {
                     }
                     else if(t2==4)
                     {
-                        ImgButton5.setImageResource(R.drawable.thi);
+                        ImgButton4.setImageResource(R.drawable.thi);
                     }
                     else if(t2==5)
                     {
-                        ImgButton6.setImageResource(R.drawable.thi);
+                        ImgButton5.setImageResource(R.drawable.thi);
                     }
                     else if(t2==6)
                     {
-                        ImgButton7.setImageResource(R.drawable.thi);
+                        ImgButton6.setImageResource(R.drawable.thi);
                     }
                     else if(t2==7)
                     {
-                        ImgButton8.setImageResource(R.drawable.thi);
+                        ImgButton7.setImageResource(R.drawable.thi);
                     }
                     else if(t2==8)
                     {
-                        ImgButton9.setImageResource(R.drawable.thi);
+                        ImgButton8.setImageResource(R.drawable.thi);
                     }
 
                 }
@@ -296,13 +296,82 @@ public class level3 extends AppCompatActivity {
 
 
         t2=(int)(Math.random()*100)%9;
-        ImgButton5 = (ImageButton)findViewById(R.id.imageButton6);
+        ImgButton4 = (ImageButton)findViewById(R.id.imageButton4);
+
+        ImgButton4.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                int t=4;
+                if(t==t2)
+                {
+
+                    ImgButton4.setImageResource(R.drawable.cat);
+
+                    dialog();
+
+                }
+                else if(t==bo)
+                {
+                    ImgButton4.setImageResource(R.drawable.bomp);
+                    bomb();
+                }
+                else
+                {
+                    count();
+
+                    ImgButton4.setImageResource(R.drawable.polic);
+                    t2=(int)(Math.random()*100)%9;
+                    if(t2==2)
+                    {
+                        ImgButton2.setImageResource(R.drawable.thi);
+                    }
+                    else if(t2==1)
+                    {
+                        ImgButton1.setImageResource(R.drawable.thi);
+                    }
+                    else if(t2==0)
+                    {
+                        ImgButton.setImageResource(R.drawable.thi);
+                    }
+                    else if(t2==3)
+                    {
+                        ImgButton3.setImageResource(R.drawable.thi);
+                    }
+                    else if(t2==5)
+                    {
+                        ImgButton5.setImageResource(R.drawable.thi);
+                    }
+                    else if(t2==6)
+                    {
+                        ImgButton6.setImageResource(R.drawable.thi);
+                    }
+                    else if(t2==7)
+                    {
+                        ImgButton7.setImageResource(R.drawable.thi);
+                    }
+                    else if(t2==8)
+                    {
+                        ImgButton8.setImageResource(R.drawable.thi);
+                    }
+
+                }
+                t2=(int)(Math.random()*100)%9;
+
+            }
+        });
+
+
+
+
+        t2=(int)(Math.random()*100)%9;
+        ImgButton5 = (ImageButton)findViewById(R.id.imageButton5);
 
         ImgButton5.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                int t=4;
+                int t=5;
                 if(t==t2)
                 {
 
@@ -334,25 +403,26 @@ public class level3 extends AppCompatActivity {
                     {
                         ImgButton.setImageResource(R.drawable.thi);
                     }
+                    else if(t2==4)
+                    {
+                        ImgButton4.setImageResource(R.drawable.thi);
+                    }
                     else if(t2==3)
                     {
                         ImgButton3.setImageResource(R.drawable.thi);
-                    }
-                    else if(t2==5)
-                    {
-                        ImgButton6.setImageResource(R.drawable.thi);
+
                     }
                     else if(t2==6)
                     {
-                        ImgButton7.setImageResource(R.drawable.thi);
+                        ImgButton6.setImageResource(R.drawable.thi);
                     }
                     else if(t2==7)
                     {
-                        ImgButton8.setImageResource(R.drawable.thi);
+                        ImgButton7.setImageResource(R.drawable.thi);
                     }
                     else if(t2==8)
                     {
-                        ImgButton9.setImageResource(R.drawable.thi);
+                        ImgButton8.setImageResource(R.drawable.thi);
                     }
 
                 }
@@ -362,16 +432,14 @@ public class level3 extends AppCompatActivity {
         });
 
 
-
-
         t2=(int)(Math.random()*100)%9;
-        ImgButton6 = (ImageButton)findViewById(R.id.imageButton7);
+        ImgButton6 = (ImageButton)findViewById(R.id.imageButton6);
 
         ImgButton6.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                int t=5;
+                int t=6;
                 if(t==t2)
                 {
 
@@ -389,7 +457,7 @@ public class level3 extends AppCompatActivity {
                 {
                     count();
 
-                    ImgButton3.setImageResource(R.drawable.polic);
+                    ImgButton6.setImageResource(R.drawable.polic);
                     t2=(int)(Math.random()*100)%9;
                     if(t2==2)
                     {
@@ -405,24 +473,24 @@ public class level3 extends AppCompatActivity {
                     }
                     else if(t2==4)
                     {
-                        ImgButton5.setImageResource(R.drawable.thi);
+                        ImgButton4.setImageResource(R.drawable.thi);
                     }
                     else if(t2==3)
                     {
                         ImgButton3.setImageResource(R.drawable.thi);
 
                     }
-                    else if(t2==6)
+                    else if(t2==5)
                     {
-                        ImgButton7.setImageResource(R.drawable.thi);
+                        ImgButton5.setImageResource(R.drawable.thi);
                     }
                     else if(t2==7)
                     {
-                        ImgButton8.setImageResource(R.drawable.thi);
+                        ImgButton7.setImageResource(R.drawable.thi);
                     }
                     else if(t2==8)
                     {
-                        ImgButton9.setImageResource(R.drawable.thi);
+                        ImgButton8.setImageResource(R.drawable.thi);
                     }
 
                 }
@@ -432,14 +500,15 @@ public class level3 extends AppCompatActivity {
         });
 
 
+
         t2=(int)(Math.random()*100)%9;
-        ImgButton7 = (ImageButton)findViewById(R.id.imageButton8);
+        ImgButton7= (ImageButton)findViewById(R.id.imageButton7);
 
         ImgButton7.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                int t=6;
+                int t=7;
                 if(t==t2)
                 {
 
@@ -473,24 +542,24 @@ public class level3 extends AppCompatActivity {
                     }
                     else if(t2==4)
                     {
-                        ImgButton5.setImageResource(R.drawable.thi);
+                        ImgButton4.setImageResource(R.drawable.thi);
                     }
                     else if(t2==3)
                     {
                         ImgButton3.setImageResource(R.drawable.thi);
 
                     }
-                    else if(t2==5)
+                    else if(t2==6)
                     {
                         ImgButton6.setImageResource(R.drawable.thi);
                     }
-                    else if(t2==7)
+                    else if(t2==5)
                     {
-                        ImgButton8.setImageResource(R.drawable.thi);
+                        ImgButton5.setImageResource(R.drawable.thi);
                     }
                     else if(t2==8)
                     {
-                        ImgButton9.setImageResource(R.drawable.thi);
+                        ImgButton8.setImageResource(R.drawable.thi);
                     }
 
                 }
@@ -499,16 +568,14 @@ public class level3 extends AppCompatActivity {
             }
         });
 
-
-
         t2=(int)(Math.random()*100)%9;
-        ImgButton8 = (ImageButton)findViewById(R.id.imageButton4);
+        ImgButton8 = (ImageButton)findViewById(R.id.imageButton8);
 
         ImgButton8.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                int t=7;
+                int t=8;
                 if(t==t2)
                 {
 
@@ -542,7 +609,7 @@ public class level3 extends AppCompatActivity {
                     }
                     else if(t2==4)
                     {
-                        ImgButton5.setImageResource(R.drawable.thi);
+                        ImgButton4.setImageResource(R.drawable.thi);
                     }
                     else if(t2==3)
                     {
@@ -550,83 +617,16 @@ public class level3 extends AppCompatActivity {
 
                     }
                     else if(t2==6)
-                    {
-                        ImgButton7.setImageResource(R.drawable.thi);
-                    }
-                    else if(t2==5)
                     {
                         ImgButton6.setImageResource(R.drawable.thi);
-                    }
-                    else if(t2==8)
-                    {
-                        ImgButton9.setImageResource(R.drawable.thi);
-                    }
-
-                }
-                t2=(int)(Math.random()*100)%9;
-
-            }
-        });
-
-        t2=(int)(Math.random()*100)%9;
-        ImgButton6 = (ImageButton)findViewById(R.id.imageButton6);
-
-        ImgButton6.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                int t=8;
-                if(t==t2)
-                {
-
-                    ImgButton9.setImageResource(R.drawable.cat);
-
-                    dialog();
-
-                }
-                else if(t==bo)
-                {
-                    ImgButton9.setImageResource(R.drawable.bomp);
-                    bomb();
-                }
-                else
-                {
-                    count();
-
-                    ImgButton9.setImageResource(R.drawable.polic);
-                    t2=(int)(Math.random()*100)%9;
-                    if(t2==2)
-                    {
-                        ImgButton2.setImageResource(R.drawable.thi);
-                    }
-                    else if(t2==1)
-                    {
-                        ImgButton1.setImageResource(R.drawable.thi);
-                    }
-                    else if(t2==0)
-                    {
-                        ImgButton.setImageResource(R.drawable.thi);
-                    }
-                    else if(t2==4)
-                    {
-                        ImgButton5.setImageResource(R.drawable.thi);
-                    }
-                    else if(t2==3)
-                    {
-                        ImgButton3.setImageResource(R.drawable.thi);
-
-                    }
-                    else if(t2==6)
-                    {
-                        ImgButton7.setImageResource(R.drawable.thi);
                     }
                     else if(t2==7)
                     {
-                        ImgButton8.setImageResource(R.drawable.thi);
+                        ImgButton7.setImageResource(R.drawable.thi);
                     }
                     else if(t2==5)
                     {
-                        ImgButton6.setImageResource(R.drawable.thi);
+                        ImgButton5.setImageResource(R.drawable.thi);
                     }
 
                 }
