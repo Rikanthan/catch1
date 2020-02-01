@@ -9,6 +9,11 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -17,16 +22,16 @@
             android:layout_width="wrap_content"
             android:layout_height="158dp"
             android:layout_weight="1"
-            app:srcCompat="@mipmap/ic_launcher"
-            />
+            android:background="#90F7F2F2"
+            app:srcCompat="@mipmap/ic_launcher" />
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@mipmap/ic_launcher"
-            />
+            android:background="#00F3EFEF"
+            app:srcCompat="@mipmap/ic_launcher" />
     </LinearLayout>
 
     <LinearLayout
@@ -39,16 +44,16 @@
             android:layout_width="wrap_content"
             android:layout_height="188dp"
             android:layout_weight="1"
-            app:srcCompat="@mipmap/ic_launcher"
-            />
+            android:background="#00F5F0F0"
+            app:srcCompat="@mipmap/ic_launcher" />
 
         <ImageButton
             android:id="@+id/imageButton4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@mipmap/ic_launcher"
-            />
+            android:background="#00F7F3F3"
+            app:srcCompat="@mipmap/ic_launcher" />
 
     </LinearLayout>
 

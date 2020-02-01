@@ -5,6 +5,7 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#003D3636"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".HomeActivity"
@@ -12,7 +13,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#000F0C0C"
         android:orientation="horizontal">
 
         <Button
@@ -20,22 +27,24 @@
             android:layout_width="wrap_content"
             android:layout_height="89dp"
             android:layout_weight="1"
-            android:text="Level 1"
-            android:onClick="level1"/>
+            android:onClick="level1"
+            android:text="Level 1" />
 
         <Button
             android:id="@+id/button19"
             android:layout_width="wrap_content"
             android:layout_height="89dp"
             android:layout_weight="1"
-            android:text="Level 2" />
+            android:text="Level 2"
+            android:onClick="level2"/>
 
         <Button
             android:id="@+id/button21"
             android:layout_width="wrap_content"
             android:layout_height="89dp"
             android:layout_weight="1"
-            android:text="Level 3" />
+            android:text="Level 3"
+            android:onClick="level3"/>
 
         <Button
             android:id="@+id/button20"

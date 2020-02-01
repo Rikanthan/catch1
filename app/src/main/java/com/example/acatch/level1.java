@@ -40,7 +40,8 @@ public class level1 extends AppCompatActivity {
                }
                else
                    {
-                       x++;
+                       count();
+
                    ImgButton.setImageResource(R.drawable.polic);
                        if(t2==2)
                        {
@@ -81,7 +82,8 @@ public class level1 extends AppCompatActivity {
                 }
                 else
                 {
-                    x++;
+
+                    count();
                     ImgButton1.setImageResource(R.drawable.polic);
                     if(t2==2)
                     {
@@ -121,7 +123,8 @@ public class level1 extends AppCompatActivity {
                 }
                 else
                 {
-                    x++;
+                    count();
+
                     ImgButton2.setImageResource(R.drawable.polic);
                     if(t2==1)
                     {
@@ -159,7 +162,8 @@ public class level1 extends AppCompatActivity {
                 }
                 else
                 {
-                    x++;
+                    count();
+
                     ImgButton3.setImageResource(R.drawable.polic);
                     t2=(int)(Math.random()*100)%4;
                     if(t2==2)
@@ -210,6 +214,32 @@ public class level1 extends AppCompatActivity {
         Intent intent = new Intent(this, level2.class);
         startActivity(intent);
 
+    }
+    public void count()
+    {
+        x++;
+        if(x>2)
+        {
+            AlertDialog.Builder builder = new AlertDialog.Builder(level1.this);
+
+            builder.setCancelable(true);
+            builder.setTitle("Thief escapes");
+            builder.setMessage("Your attempts limit exceeded");
+            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    openActivity3();
+                }
+            });
+            builder.show();
+
+
+        }
+    }
+    public void openActivity3()
+    {
+        Intent intent = new Intent(this, level1.class);
+        startActivity(intent);
     }
 
 

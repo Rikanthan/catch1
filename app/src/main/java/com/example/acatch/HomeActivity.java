@@ -17,17 +17,9 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
+
 
 
 
@@ -40,5 +32,16 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent=new Intent(this, level1.class);
         startActivity(intent);
     }
+    public  void level2(View v)
+    {
+        Intent intent=new Intent(this, level2.class);
+        startActivity(intent);
+    }
+    public  void level3(View v)
+    {
+        Intent intent=new Intent(this, level3.class);
+        startActivity(intent);
+    }
+
 
 }
